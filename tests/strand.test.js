@@ -1,3 +1,4 @@
+const AminoAcid = require("../src/AminoAcid");
 const Codon = require("../src/Codon");
 const Strand = require("../src/Strand");
 
@@ -89,7 +90,10 @@ describe("The Strand class", () => {
     strand.addNucleotide("U");
     strand.addNucleotide("U");
     strand.addNucleotide("U");
-    expect(strand.getAminoAcids()).toEqual(["Threonine", "Phenylalanine"]);
+    const aminoAcids = strand.getAminoAcids();
+    for (let i = 0; i < aminoAcids.length; i++) {
+      expect(aminoAcids[i]).toBeInstanceOf(AminoAcid);
+    }
   });
 
 });

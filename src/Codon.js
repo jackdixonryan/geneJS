@@ -1,4 +1,4 @@
-const AminoAcidTable = require('./AminoAcidTable');
+const AminoAcidFactory = require('./AminoAcidFactory');
 
 class Codon {
   constructor(nucleotideTrio) {
@@ -18,11 +18,19 @@ class Codon {
     }
 
     this.nucleotideTrio = nucleotideTrio;
+    this.aminoAcid = this.getAminoAcid();
+    if (this.nucleotideTrio === "UUG" || this.nucleotideTrio === "GUG" || this.nucleotideTrio === "AUG") {
+      this.isStartCodon = true;
+    }
+
+    if (this.nucleotideTrio === "UAA" || this.nucleotideTrio === "UAG" || this.nucleotideTrio === "UGA") {
+      this.isStopCodon = true;
+    }
   }
 
   getAminoAcid() {
-    const table = new AminoAcidTable();
-    return table.getAminoAcid(this.nucleotideTrio);
+    const factory = new AminoAcidFactory();
+    return factory.getAminoAcid(this.nucleotideTrio);
   }
 }
 

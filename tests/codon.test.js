@@ -1,4 +1,5 @@
 const Codon = require("../src/Codon");
+const AminoAcid = require("../src/AminoAcid");
 
 describe("The Codon class", () => {
   test("It can be instantiated.", () => {
@@ -50,9 +51,33 @@ describe("The Codon class", () => {
     expect(codon.getAminoAcid).not.toBeUndefined();
   });
 
-  test("The getAminoAcid method returns a string representation of the AminoAcid.", () => {
+  test("The getAminoAcid method returns an instance of AminoAcid.", () => {
     const codon = new Codon("AUG");
-    expect(codon.getAminoAcid()).toEqual("Methionine");
+    expect(codon.getAminoAcid()).toBeInstanceOf(AminoAcid);
   });
 
+  test("The codon has an aminoAcid property.", () => {
+    const codon = new Codon("AUG");
+    expect(codon.aminoAcid).not.toBeUndefined();
+  });
+
+  test("The codon has an isStartCodon property.", () => {
+    const codon = new Codon("AUG");
+    expect(codon.isStartCodon).not.toBeUndefined();
+  });
+
+  test("The codon has an isStopCodon property.", () => {
+    const codon = new Codon("UAA");
+    expect(codon.isStopCodon).not.toBeUndefined();
+  });
+
+  test("If the codon is a start codon, isStartCodon is true.", () => {
+    const codon = new Codon("AUG");
+    expect(codon.isStartCodon).toBe(true);
+  });
+
+  test("If the codon is a stop codon, isStopCodon is true.", () => {
+    const codon = new Codon("UAA");
+    expect(codon.isStopCodon).toBe(true);
+  });
 });

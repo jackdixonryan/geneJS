@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --ci --coverage"
   },
   "author": "Jack D Ryan",
   "license": "MIT",
