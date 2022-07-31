@@ -76,12 +76,12 @@ describe("The Strand class", () => {
     expect(strand.getCodons()).toEqual([new Codon("ACG"), new Codon("UUU")]);
   });
 
-  test("It has a getProteins method.", () => {
+  test("It has a getAminoAcids method.", () => {
     const strand = new Strand();
-    expect(strand.getProteins).not.toBeUndefined();
+    expect(strand.getAminoAcids).not.toBeUndefined();
   });
 
-  test("The getProteins method returns an array of proteins.", () => {
+  test("The getAminoAcids method returns an array of AminoAcids.", () => {
     const strand = new Strand();
     strand.addNucleotide("A");
     strand.addNucleotide("C");
@@ -89,7 +89,7 @@ describe("The Strand class", () => {
     strand.addNucleotide("U");
     strand.addNucleotide("U");
     strand.addNucleotide("U");
-    expect(strand.getProteins()).toEqual(["M", "M"]);
+    expect(strand.getAminoAcids()).toEqual(["Threonine", "Phenylalanine"]);
   });
 
 });

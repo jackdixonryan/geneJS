@@ -1,5 +1,5 @@
 
-class ProteinTable {
+class AminoAcidTable {
   constructor() { 
     this.table = {
       UUU: "Phenylalanine",
@@ -72,9 +72,9 @@ class ProteinTable {
     }
   }
 
-  getProtein(strand) {
+  getAminoAcid(strand) {
     return this.table[strand] || undefined;
   }
 }
 
-module.exports = ProteinTable;
+module.exports = AminoAcidTable;

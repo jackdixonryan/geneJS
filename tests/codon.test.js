@@ -45,14 +45,14 @@ describe("The Codon class", () => {
     }).not.toThrowError();
   });
 
-  test("The Codon has a getProtein method.", () => {
+  test("The Codon has a getAminoAcid method.", () => {
     const codon = new Codon("AUG");
-    expect(codon.getProtein).not.toBeUndefined();
+    expect(codon.getAminoAcid).not.toBeUndefined();
   });
 
-  test("The getProtein method returns a string representation of the protein.", () => {
+  test("The getAminoAcid method returns a string representation of the AminoAcid.", () => {
     const codon = new Codon("AUG");
-    expect(codon.getProtein()).toEqual("Methionine");
+    expect(codon.getAminoAcid()).toEqual("Methionine");
   });
 
 });

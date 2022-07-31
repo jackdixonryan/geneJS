@@ -1,4 +1,4 @@
-const ProteinTable = require('../src/ProteinTable');
+const AminoAcidTable = require('./AminoAcidTable');
 
 class Codon {
   constructor(nucleotideTrio) {
@@ -20,9 +20,9 @@ class Codon {
     this.nucleotideTrio = nucleotideTrio;
   }
 
-  getProtein() {
-    const table = new ProteinTable();
-    return table.getProtein(this.nucleotideTrio);
+  getAminoAcid() {
+    const table = new AminoAcidTable();
+    return table.getAminoAcid(this.nucleotideTrio);
   }
 }
 

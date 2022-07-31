@@ -35,13 +35,13 @@ class Strand {
     return codons;
   }
 
-  getProteins() {
-    const proteins = [];
+  getAminoAcids() {
+    const AminoAcids = [];
     const codons = this.getCodons();
     for (let i = 0; i < codons.length; i++) {
-      proteins.push(codons[i].getProtein());
+      AminoAcids.push(codons[i].getAminoAcid());
     }
-    return proteins;
+    return AminoAcids;
   }
 }
 
