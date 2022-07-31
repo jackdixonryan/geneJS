@@ -1,0 +1,17 @@
+{
+  "name": "gene",
+  "version": "1.0.0",
+  "description": "GENE",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Jack D Ryan",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}

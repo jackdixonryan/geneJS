@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1659283875593" clover="3.2.0">
+  <project timestamp="1659283875593" name="All files">
+    <metrics statements="33" coveredstatements="33" conditionals="14" coveredconditionals="14" methods="8" coveredmethods="8" elements="55" coveredelements="55" complexity="0" loc="33" ncloc="33" packages="1" files="3" classes="3"/>
+    <file name="Codon.js" path="C:\Users\jackd\Documents\code\Gene\src\Codon.js">
+      <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="5" count="15" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="9" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="13" count="11" type="stmt"/>
+      <line num="14" count="11" type="stmt"/>
+      <line num="15" count="33" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="20" count="9" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="29" count="2" type="stmt"/>
+    </file>
+    <file name="ProteinTable.js" path="C:\Users\jackd\Documents\code\Gene\src\ProteinTable.js">
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <line num="4" count="8" type="stmt"/>
+      <line num="76" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="80" count="3" type="stmt"/>
+    </file>
+    <file name="Strand.js" path="C:\Users\jackd\Documents\code\Gene\src\Strand.js">
+      <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="5" count="11" type="stmt"/>
+      <line num="9" count="14" type="cond" truecount="2" falsecount="0"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="13" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="17" count="12" type="stmt"/>
+      <line num="18" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="22" count="11" type="stmt"/>
+      <line num="26" count="2" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="33" count="2" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
