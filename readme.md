@@ -1,3 +1,8 @@
+![Total coverage](./badges/coverage-jest%20coverage.svg)
+![Function coverage](./badges/coverage-functions.svg)
+![Line coverage](./badges/coverage-lines.svg)
+![Statement coverage](./badges/coverage-statements.svg)
+
 Basically, this is a question of expression. 
 
 GENES are the information carriers of life. From my limited understanding of genetics, every strand of DNA is composed of 4 types of bases called nucleotides. The four pair together with exactly one other to form a pair, giving DNA its double-stranded structure. These pairs are: 
